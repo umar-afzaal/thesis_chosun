@@ -1,0 +1,13 @@
+\begin{center}
+\section{SUMMARY AND CONCLUSIONS}
+\end{center}
+
+
+
+The results presented in this paper certainly place the proposed approach as a competitive methodology for designing fault-resilient circuits. SYFR is a complete systematic method for automated synthesis of fault-resilient circuits at the gate-level without considering technology-specifics. Since SYFR is based on evolutionary computation, it is able to provide a multitude of tradeoffs in comparison to the conventional synthesis tools. The circuits evolved can easily be inserted at intermediate nodes without creating any single points of failure.
+
+The superior performance of fault-resilient circuits at intermediate nodes was demonstrated through an application on artificial neural networks. Results give credibility to the fault-resilience metric $P_{fault}$ used by SYFR to characterize a circuit's tolerance to faults. The majority of SYFR's synthesis success is attributed to the proposed strategy for constraining the Cartesian graph. The graph constraints made the evolution much easier as confirmed by experimental results. It was also demonstrated that smaller fault-resilient arithmetic circuits can be stacked to build large adders and multipliers which are also fault-resilient. 
+
+Another benefit of SYFR was that it does not require any special computational resources to execute. A modern desktop-class computer can easily implement SYFR since all of our experiments were conducted on a desktop-class machine. 
+
+For future research, we plan to investigate ways to utilize circuits from ReCkt library to build larger arithmetic circuits in an optimal way. We also intend to investigate the evolutionary synthesis of error-resilient circuits. That is to say, there are different error metrics which are application-oriented. For example, PSNR is a metric which is used to gauge the quality of an image. Our goal would be to apply evolutionary circuit synthesis in such a way that the circuits are evolved for improved PSNR performance in fault conditions.

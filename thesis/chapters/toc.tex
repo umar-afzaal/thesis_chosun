@@ -1,0 +1,73 @@
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+\setcounter{page}{1}
+\renewcommand*\contentsname{\centering TABLE OF CONTENTS}
+\tableofcontents
+
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS AND ACRONYMS
+%----------------------------------------------------------------------------------------
+\begin{center}
+\section*{LIST OF ABBREVIATIONS AND ACRONYMS}
+\end{center}
+\addcontentsline{toc}{section}{LIST OF ABBREVIATIONS AND ACRONYMS}
+
+\begin{table}[h!]
+    \captionsetup{labelformat=empty}
+    \begin{tabular}{ll} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+      CMOS				&			Complementary metal–oxide–semiconductor \\
+	  SEU			    &		    Single-event upset\\
+	  SET		    	&			Single-event transient\\
+	  PO			    &			Primary output \\			
+      TMR				&			Triple modular redundancy\\
+      ATMR              &           Approximate triple modular redundancy\\
+      FATMR             &           Full approximate triple modular redundancy\\
+      DWC 				& 			Duplication with comparison\\
+      TSC		 		& 			Totally self-checking circuits\\
+      CED		 		& 			Concurrent error detection\\
+      SOP               &           Sum of products\\
+      POS               &           Products of sum\\
+      FPGA              &           Field-programmable gate arrays\\
+      FMR               &           Fault masking ratio\\
+      $P_{fault}$       &           Fault-observation probability\\
+      CLB               &           Configurable logic blocks\\
+      PE                &           Processing element\\
+      LUT               &           Look-up table\\
+      CNN               &           Convolutional neural network\\
+      CGP               &           Cartesian genetic programming\\
+      CS                &           Cuckoo search\\
+      CS-GRN            &           Cuckoo search with genetic replacement of abandoned nests\\
+      CNF               &           Conjunctive normal form\\
+      SAT               &           Satisfiability\\
+      PDP               &           Power-delay product\\
+      EP                &           Error probability\\
+
+    \end{tabular}
+\end{table}
+\pagebreak
+
+
+
+%----------------------------------------------------------------------------------------
+%	LIST OF FIGURES
+%----------------------------------------------------------------------------------------
+\renewcommand*\listfigurename{\centering LIST OF FIGURES}
+\listoffigures
+\begingroup
+  \pagestyle{plain}%
+  \cleardoublepage
+\endgroup
+\pagebreak
+
+
+
+%----------------------------------------------------------------------------------------
+%	LIST OF TABLES
+%----------------------------------------------------------------------------------------
+\renewcommand*\listtablename{\centering LIST OF TABLES}
+\listoftables
+
+
+
