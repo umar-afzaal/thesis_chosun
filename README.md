@@ -1,1 +1,1 @@
-# thesis_chosun
+# Thesis Template Chosun University
