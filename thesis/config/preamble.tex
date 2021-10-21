@@ -1,0 +1,124 @@
+\documentclass[11pt,oneside,onecolumn]{article}
+
+%----------------------------------------------------------------------------------------
+%	MARGINS
+%----------------------------------------------------------------------------------------
+%geometry
+\usepackage[b5paper,
+            left=0.79in,right=0.79in,top=1.18in,
+            bottom=1.18in]{geometry}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+%----------------------------------------------------------------------------------------
+%	SOME PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{upquote}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{tabularx,booktabs}
+\usepackage[font=small,skip=7.5pt]{caption}
+\usepackage[verbose]{placeins}
+\usepackage{afterpage}
+\usepackage[english]{babel}
+\usepackage{kotex}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{tocloft}
+\usepackage[normalem]{ulem}
+\usepackage{enumitem}
+\usepackage{algorithm,algorithmic,setspace}
+\pretolerance=10000
+\newtheorem{definition}{Definition}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex}
+\addbibresource{references.bib}
+
+
+%----------------------------------------------------------------------------------------
+%	GRAPHICS
+%----------------------------------------------------------------------------------------
+\usepackage[pdftex]{graphicx}
+\usepackage{subfig}
+\graphicspath{{./}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.eps}
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+\usepackage[export]{adjustbox}
+\usepackage{pdfpages}
+
+
+%----------------------------------------------------------------------------------------
+%	SOME MORE SETTINGS
+%----------------------------------------------------------------------------------------
+% Clicklable toc with colors
+\usepackage{color}   % May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true, % Set true if you want colored links
+    linktoc=all,     % Set to all if you want both sections and subsections linked
+	linkcolor={blue},
+	citecolor={blue},
+	urlcolor={blue}
+}
+% Some packages ( position dependent )
+\usepackage{mathptmx}
+\usepackage{sectsty}
+\usepackage{cleveref}
+% Tables
+\usepackage{makecell}
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+% Section headings settings
+\makeatletter
+\renewcommand*{\thesection}{\arabic{section}}
+\renewcommand*{\thesubsection}{\thesection.\arabic{subsection}}
+\renewcommand*{\p@subsection}{}
+\renewcommand*{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\renewcommand*{\p@subsubsection}{}
+\makeatother
+% Define subsubsubsection
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+%\sectionfont{\fontsize{16}{12}\selectfont}
+\sectionfont{\Large}
+\subsectionfont{\large}
+\usepackage{changepage}
+% Line spacing
+\renewcommand{\baselinestretch}{1.45}
+% Get page numbers in roman for contents
+\pagenumbering{roman}
+\setcounter{page}{1}
+% Each section on new page
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+% Spacing between index and headings in toc
+\cftsetindents{section}{1em}{2.6em}
+
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}}
+\numberwithin{figure}{section}
+
+\setcounter{table}{0}
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}}
+\numberwithin{table}{section}
+
+\setcounter{equation}{0}
+\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+\numberwithin{equation}{section}
+
+\setcounter{algorithm}{0}
+\renewcommand{\thealgorithm}{\arabic{section}.\arabic{algorithm}}
+\numberwithin{algorithm}{section}
+
